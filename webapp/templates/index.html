@@ -3,14 +3,31 @@
 
 {% block body_block %}
 <div class="row heading">
-  <h2>Welcome to my Computer Vision Project</h2>
-  <p> This project is based on using pretrained VGG-16 CNN model. In this
-    project, we essentially deploy a model which detects car damage.</p>
+  <h2 class="display-4">Welcome to my Computer Vision Projects</h2>
 </div>
 
 <div class="row">
-      <button type="button" class="btn btn-light btn-link">CNN Architecture</button>
-      <button type="button" class="btn btn-light btn-link" style='margin-left:30px'>VGG-16 Architecture</button>
-      <button type="button" class="btn btn-light btn-link" style='margin-left:30px'>Test the Solution !</button>
+  <div class="col-md-3 heading">
+    <h3>My Blogs</h3>
+    <button type="button" class="btn btn-info btn-sm btn-block button-style" style="margin-top:20px">CNN Architecture</button>
+    <button type="button" class="btn btn-info btn-sm btn-block button-style">VGG-16 Architecture</button>
+    <button type="button" class="btn btn-info btn-sm btn-block button-style">ResNet Architecture</button>
+    <button type="button" class="btn btn-info btn-sm btn-block button-style">Inception Architecture</button>
+  </div>
+  <div class="col-md-9">
+    <div class="card" style="margin-top:50px">
+      <div class="card-body">
+        <h5 class="card-title">Project 1: Car Detection</h5>
+        <p class="card-text">A simple implementation of transfer learning using VGG16 to detect if an image cotains a car or not.
+          Click on 'Upload Image' to test the solution!</p>
+          <form class="md-form">
+            <div class="btn btn-info btn-sm float-left">
+              <span>Upload Image</span>
+              <input type="file" multiple>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}
