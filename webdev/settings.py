@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('DJ_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # Need to be True to run localhost
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
