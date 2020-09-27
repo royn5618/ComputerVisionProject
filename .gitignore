@@ -2,6 +2,8 @@
 .env
 *.pyc
 
+settings.py
+
 Skip to content
 github
 /
