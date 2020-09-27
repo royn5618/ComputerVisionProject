@@ -2,79 +2,32 @@
 {% extends "base.html" %}
 
 {% block body_block %}
-<div class="container-fluid">
-  <div class="row heading">
-    <h2 class="display-4" style="color: white">Welcome to my Profile</h2>
+<div class="row heading">
+  <h2 class="display-4">Welcome to my Computer Vision Projects</h2>
+</div>
+
+<div class="row">
+  <div class="col-md-3 heading">
+    <h3>My Blogs</h3>
+    <button type="button" class="btn btn-info btn-sm btn-block button-style" style="margin-top:20px">CNN Architecture</button>
+    <button type="button" class="btn btn-info btn-sm btn-block button-style">VGG-16 Architecture</button>
+    <button type="button" class="btn btn-info btn-sm btn-block button-style">ResNet Architecture</button>
+    <button type="button" class="btn btn-info btn-sm btn-block button-style">Inception Architecture</button>
   </div>
-    <div class="row" style="margin-top:30px; color: #05386b; ">
-      <div class="col-lg-3" style="margin-top: 10px; background-color:rgba(227, 226, 223, .2); color:white">
-        Lore ipesem Lore ipesem Lore ipesem Lore ipesem Lore ipesem
-        Lore ipesem Lore ipesemLore ipesemLoreLore ipesem Lore ipesem Lore ipesem
-        Lore ipesem Lore ipesemLore ipesem Lore ipesem Lore ipesem Lore ipesemLore ipesem
-        Lore ipesemLore ipesem Lore ipesem Lore ipesem Lore ipesem Lore ipesemv
+  <div class="col-md-9">
+    <div class="card" style="margin-top:50px">
+      <div class="card-body">
+        <h5 class="card-title">Project 1: Car Detection</h5>
+        <p class="card-text">A simple implementation of transfer learning using VGG16 to detect if an image cotains a car or not.
+          Click on 'Upload Image' to test the solution!</p>
+          <form class="md-form">
+            <div class="btn btn-info btn-sm float-left">
+              <span>Upload Image</span>
+              <input type="file" multiple>
+            </div>
+          </form>
       </div>
-      <div class="col-lg-9">
-        <div class="row">
-        <div class="col-lg-4">
-        <div class="card card-fresh">
-          <div class="card-body">
-            <h5 class="card-title"> Computer Vision Projects</h5>
-            <p class="card-text"> Last few months I have been developing my
-              skills around machine vision. Click on "Explore" to check them out.</p>
-            <a href="{% url 'cvprojects' %}" class="btn btn-primary btn-fresh">Explore!</a>
-          </div>
-        </div>
-        </div>
-        <div class="col-lg-4">
-        <div class="card card-fresh">
-          <div class="card-body">
-            <h5 class="card-title">My Technical Blogs</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary btn-fresh">Go somewhere</a>
-          </div>
-        </div>
-        </div>
-        <div class="col-lg-4">
-        <div class="card card-fresh">
-          <div class="card-body">
-            <h5 class="card-title">My Art Gallery</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary btn-fresh">Go somewhere</a>
-          </div>
-        </div>
-        </div>
-        </div>
-        <div class="row">
-        <div class="col-lg-4">
-        <div class="card card-fresh">
-          <div class="card-body">
-            <h5 class="card-title"> Natural Language Processing Projects</h5>
-            <p class="card-text"> Last few months I have been developing my
-              skills around machine vision. Click on "Explore" to check them out.</p>
-            <a href="#" class="btn btn-primary btn-fresh">Explore!</a>
-          </div>
-        </div>
-        </div>
-        <div class="col-lg-4">
-        <div class="card card-fresh">
-          <div class="card-body">
-            <h5 class="card-title">My Travel Blogs</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary btn-fresh">Go somewhere</a>
-          </div>
-        </div>
-        </div>
-        <div class="col-lg-4">
-        <div class="card card-fresh">
-          <div class="card-body">
-            <h5 class="card-title">My Card</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary btn-fresh">Go somewhere</a>
-          </div>
-        </div>
-        </div>
-        </div>
     </div>
-    </div>
+  </div>
 </div>
 {% endblock %}
