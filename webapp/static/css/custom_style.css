@@ -31,3 +31,29 @@ background-attachment: fixed;
 .button-style{
   margin-bottom: 20px;
 }
+
+.content-style{
+  color:grey;
+}
+
+.btn-custom {
+    color: grey !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    background-color: #ffff00 !important;
+    border-color: black !important;
+}
+
+.card-fresh{
+  background-color:rgba(227, 226, 223, .7) !important;
+  width: 15rem !important;
+  margin:10px !important;
+}
+
+.btn-fresh{
+  color: white !important;
+  font-size: 15px !important;
+  font-weight: bold !important;
+  background-color: #d79922 !important;
+  border-color: #05386b !important;
+}

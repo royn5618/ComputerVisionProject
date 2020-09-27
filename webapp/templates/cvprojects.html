@@ -1,0 +1,36 @@
+
+{% extends "base.html" %}
+
+{% block body_block %}
+<div class="container-fluid">
+<div class="row heading">
+  <h2 class="display-4">Welcome to my Computer Vision Projects</h2>
+</div>
+<div class="row">
+  <div class="col-md-3 heading" style="background-color:rgba(227, 226, 223, .2); padding-top: 10px">
+    <h3>Related Blogs</h3>
+    <button type="button" class="btn btn-md btn-block btn-fresh" style="margin-top:20px">CNN Architecture</button>
+    <button type="button" class="btn btn-md btn-block btn-fresh">VGG-16 Architecture</button>
+    <button type="button" class="btn btn-md btn-block btn-fresh">ResNet Architecture</button>
+    <button type="button" class="btn btn-md btn-block btn-fresh">Inception Architecture</button>
+  </div>
+  <div class="col-md-9 heading" style="padding-top: 10px">
+    <h3>My Projects</h3>
+    <div class="card" style="margin-top:20px">
+      <div class="card-body content-style">
+        <h5 class="card-title">Project 1: Car Detection</h5>
+        <p class="card-text">A simple implementation of transfer learning using VGG16 to detect if an image cotains a car or not.
+          Click on 'Upload Image' to test the solution!</p>
+          <form class="md-form">
+            <div class="btn btn-info btn-sm float-left">
+              <span>Upload Image</span>
+              <input type="file" multiple>
+            </div>
+          </form>
+          <button type="button" class="btn btn-md btn-fresh" style="margin-right:10px; float: right;">View WorkFlow</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
