@@ -14,10 +14,12 @@
         <p class="card-text">A simple implementation of transfer learning using VGG16 to detect if an image cotains a car or not.
           Click on 'Upload Image' to test the solution!</p>
           <form class="md-form" action="{% url "prediction" %}" method="post" enctype="multipart/form-data">
-              <span>Upload Image</span>
+              <span><b>Upload Image :</b></span>
               {% csrf_token %}
               <input type="file" multiple>
-              <button type="submit" class="btn btn-md btn-info">Detect</button>
+              <br/>
+              <br/>
+              <button type="submit" class="btn btn-md btn-info">Analyze Image</button>
           </form>
           <p>{{ result }}</p>
           <button type="button" class="btn btn-sm btn-fresh" style="margin-right:10px; float: right;">View Notebook on GitHub</button>
